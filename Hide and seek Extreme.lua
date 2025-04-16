@@ -88,4 +88,4 @@ for _, player in ipairs(Players:GetPlayers()) do
   if player.Character then HandleHighlight(player.Character) end
 end
 
-end)
+end) 
