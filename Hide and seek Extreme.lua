@@ -61,7 +61,7 @@ end)
 SectionEsp:NewButton("Esp Player", "Esp all Players", function()
     local Players = game:GetService("Players")
 
-local highlightColor = Color3.fromRGB(255, 255, 0)
+local highlightColor = Color3.fromRGB(255, 0, 0)
 local fillTransparency = 0.5
 local outlineTransparency = 0
 
@@ -69,7 +69,7 @@ local function HandleHighlight(character)
   local highlight = character:FindFirstChild("Highlight")
   local hasSparkles = character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Sparkles")
   if hasSparkles then
-    if highlight then highlight:Destroy() end
+    if highlight then print("Seek") end
   elseif not highlight then
     highlight = Instance.new("Highlight")
     highlight.Name = "Highlight"
